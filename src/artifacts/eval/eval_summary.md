@@ -1,0 +1,36 @@
+# Eval Summary (test)
+
+- Timestamp: 2026-02-08T22:40:11.919463Z
+- N: 95677 | base_rate: 0.3979
+
+## Global metrics
+- ROC-AUC: 0.9153937348962254
+- AP (AUPRC): 0.9245776738997376
+- LogLoss: 0.36955054072731425
+- Brier: 0.11913193382312723
+
+## Threshold @ 0.5
+- precision: 0.7701598494413607, recall: 0.8492434590732374, fpr: 0.16747383221371662, fnr: 0.15075654092676263
+
+## Triage thresholds
+- T_low (approve): 0.20360057911021506
+- T_high (decline): 0.7116969696969697
+- approve_rate: 0.2000062710996373, review_rate: 0.4680330695987541, decline_rate: 0.33196065930160856
+- approve_fraud_rate: 0.07739339464882942, decline_precision: 0.950914643745474, decline_recall: 0.7933697593779553
+
+## Top features
+- Country_BIN_ISO: 857055.4469995499
+- Payment_method: 556405.2386903763
+- BIN_Bank: 371182.2144918442
+- country_mismatch: 217182.4324463606
+- tx_month: 113383.13409763575
+- Processing_value: 54397.35309853032
+- Valor: 53681.507369086146
+- mes: 52998.52509444952
+- tx_day: 34318.731088053435
+- tx_hour: 28103.755727488548
+- cnt_account_24h: 15010.043800472748
+- Franchise: 6630.411630868912
+- Card_type: 6515.540261864662
+- processing_value_log1p: 6305.308438152075
+- cnt_card_24h: 3863.8691985569894

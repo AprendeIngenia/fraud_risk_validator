@@ -1,0 +1,21 @@
+# --- Python ---
+.venv/
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# --- Data (Versionado por DVC) ---
+src/data/raw/*
+src/data/processed/*
+src/data/splits/*
+!src/data/raw/.gitkeep
+!src/data/processed/.gitkeep
+!src/data/splits/.gitkeep
+
+# --- OS & IDE ---
+.DS_Store
+.vscode/
+.idea/
+
+# --- Docker ---
+.dockerignore

@@ -1,0 +1,133 @@
+{
+  "split_used": "test",
+  "timestamp": "2026-02-08T22:40:11.919463Z",
+  "n": 95677,
+  "base_rate": 0.3978803683225854,
+  "metrics": {
+    "roc_auc": 0.9153937348962254,
+    "average_precision": 0.9245776738997376,
+    "logloss": 0.36955054072731425,
+    "brier": 0.11913193382312723,
+    "n": 95677,
+    "base_rate": 0.3978803683225854
+  },
+  "threshold_0_5": {
+    "thr": 0.5,
+    "tn": 47961,
+    "fp": 9648,
+    "fn": 5739,
+    "tp": 32329,
+    "precision": 0.7701598494413607,
+    "recall": 0.8492434590732374,
+    "fpr": 0.16747383221371662,
+    "fnr": 0.15075654092676263,
+    "accuracy": 0.8391776498008926
+  },
+  "triage": {
+    "T_low": 0.20360057911021506,
+    "T_high": 0.7116969696969697,
+    "rates": {
+      "approve_rate": 0.2000062710996373,
+      "review_rate": 0.4680330695987541,
+      "decline_rate": 0.33196065930160856
+    },
+    "quality": {
+      "approve_fraud_rate": 0.07739339464882942,
+      "decline_precision": 0.950914643745474,
+      "decline_recall": 0.7933697593779553
+    },
+    "counts": {
+      "approve_n": 19136,
+      "review_n": 44780,
+      "decline_n": 31761
+    },
+    "notes": {
+      "T_low_meaning": "Auto-approve si score < T_low (controla fraude en aprobadas).",
+      "T_high_meaning": "Auto-decline si score >= T_high (controla precision en rechazadas)."
+    },
+    "debug": {
+      "targets": {
+        "target_approve_fraud_rate": 0.01,
+        "target_decline_precision": 0.95,
+        "min_auto_approve_rate": 0.2,
+        "min_auto_decline_rate": 0.01
+      },
+      "candidates": {
+        "approve_candidates_found": 0,
+        "decline_candidates_found": 58
+      }
+    }
+  },
+  "top_features": [
+    {
+      "feature": "Country_BIN_ISO",
+      "importance": 857055.4469995499
+    },
+    {
+      "feature": "Payment_method",
+      "importance": 556405.2386903763
+    },
+    {
+      "feature": "BIN_Bank",
+      "importance": 371182.2144918442
+    },
+    {
+      "feature": "country_mismatch",
+      "importance": 217182.4324463606
+    },
+    {
+      "feature": "tx_month",
+      "importance": 113383.13409763575
+    },
+    {
+      "feature": "Processing_value",
+      "importance": 54397.35309853032
+    },
+    {
+      "feature": "Valor",
+      "importance": 53681.507369086146
+    },
+    {
+      "feature": "mes",
+      "importance": 52998.52509444952
+    },
+    {
+      "feature": "tx_day",
+      "importance": 34318.731088053435
+    },
+    {
+      "feature": "tx_hour",
+      "importance": 28103.755727488548
+    },
+    {
+      "feature": "cnt_account_24h",
+      "importance": 15010.043800472748
+    },
+    {
+      "feature": "Franchise",
+      "importance": 6630.411630868912
+    },
+    {
+      "feature": "Card_type",
+      "importance": 6515.540261864662
+    },
+    {
+      "feature": "processing_value_log1p",
+      "importance": 6305.308438152075
+    },
+    {
+      "feature": "cnt_card_24h",
+      "importance": 3863.8691985569894
+    }
+  ],
+  "paths": {
+    "model_path": "C:\\Users\\santi\\Desktop\\proyectos\\fraud_risk_validator\\src\\models\\LGBM\\lgbm_fraud_model_v1.pkl",
+    "X_path": "C:\\Users\\santi\\Desktop\\proyectos\\fraud_risk_validator\\src\\data\\processed\\X_test.parquet",
+    "y_path": "C:\\Users\\santi\\Desktop\\proyectos\\fraud_risk_validator\\src\\data\\processed\\y_test.parquet",
+    "roc_curve_png": "C:\\Users\\santi\\Desktop\\proyectos\\fraud_risk_validator\\src\\artifacts\\eval\\roc_curve.png",
+    "pr_curve_png": "C:\\Users\\santi\\Desktop\\proyectos\\fraud_risk_validator\\src\\artifacts\\eval\\pr_curve.png",
+    "threshold_sweep_csv": "C:\\Users\\santi\\Desktop\\proyectos\\fraud_risk_validator\\src\\artifacts\\eval\\threshold_sweep.csv",
+    "feature_importance_png": "C:\\Users\\santi\\Desktop\\proyectos\\fraud_risk_validator\\src\\artifacts\\eval\\feature_importance.png",
+    "feature_importance_csv": "C:\\Users\\santi\\Desktop\\proyectos\\fraud_risk_validator\\src\\artifacts\\eval\\feature_importance.csv"
+  }
+}
