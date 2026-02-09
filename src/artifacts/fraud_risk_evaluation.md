@@ -1,4 +1,4 @@
-# Fraud Detection System v1.0.0
+# Fraud Risk Validator — Evaluation
 
 ## 1. Modelo Utilizado y Justificación
 Se ha implementado un modelo basado en LightGBM (Light Gradient Boosting Machine) utilizando un enfoque de Gradient Boosting Decision Trees (GBDT).
